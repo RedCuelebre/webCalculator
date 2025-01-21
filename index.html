@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/scripts.js"></script>
+</head>
+<header>    
+    <h1>Simple Web Calculator</h1>
+    <button id="theme-toggle" onclick="toggleTheme()">&#9728;</button>    
+</header>
+    <section id="calculator">
+        <div id="Display">            
+            <textarea  id="txtResult"  class="display" rows="2" cols="50" readonly ></textarea>
+        </div>
+        <div id="Buttons">
+          <button id="btnAC" onclick="clearDisplay()">AC</button>
+          <button id="btnPlusMin" onclick="changeSign()">+/-</button>
+          <button id="btnPercent" onclick="addOperation('%')">%</button>
+          <button id="btnDivi" onclick="addOperation('/')">/</button>
+          <button id="btn7" onclick="appendNumber('7')">7</button>
+          <button id="btn8" onclick="appendNumber('8')">8</button>
+          <button id="btn9" onclick="appendNumber('9')">9</button>
+          <button id="btnMul">X</button>
+          <button id="btn4" onclick="appendNumber('4')">4</button>
+          <button id="btn5" onclick="appendNumber('5')">5</button>
+          <button id="btn6" onclick="appendNumber('6')">6</button>
+          <button id="btnSub">-</button>
+          <button id="btn1" onclick="appendNumber('1')">1</button>
+          <button id="btn2" onclick="appendNumber('2')">2</button>
+          <button id="btn3" onclick="appendNumber('3')">3</button>
+          <button id="btnPlus">+</button>
+          <button id="btnRedo">Redo</button>
+          <button id="btn0" onclick="appendNumber('0')">0</button>
+          <button id="btnDec">.</button>
+          <button id="btnEquals">=</button>
+        </div>
+    </section>
+<footer>
+    <p>
+        <!--Change the url to my personal linkedin profile-->
+        Web developed by: <a href="https://www.linkedin.com/in/sergio-fern%C3%A1ndez-ruiz-7b1b3b1b4/">Adrián
+            Gómez Macías</a>
+    </p>
+</footer>
+</html>
