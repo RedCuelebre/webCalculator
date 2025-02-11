@@ -1,10 +1,8 @@
 /* JavaScript for the Simple Web Calculator */
 
 /* Global Variables */
-let val1 = 0; // first value of the opeartion
+let value = 0; // current value
 let operation = ''; // operation to be performed
-let val2 = 0; // second value of the operation
-let
 
 
 
@@ -42,15 +40,28 @@ function appendNumber(number) {
 
 /* Function to add a decimal point to the current value */
 function appendDecimal() {
-    /* TO-DO */
+    value += '.';
 }
 
 /* Function to add an operator */
 function appendOperator(operator) {
-    /* TO-DO */
+
+    if (operation === '') {
+        operation = value + operator;
+        value = 0;
+    } else {
+        
+    }
+    operation = operator;
+
 }
 
 /* Function to change the sign of the current value */
 function changeSign() {
+    /* TO-DO */
+}
+
+/* Function to calculate the result */
+function calculateResult() {
     /* TO-DO */
 }

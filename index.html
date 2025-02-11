@@ -32,11 +32,11 @@
           <button id="btn1" onclick="appendNumber('1')">1</button>
           <button id="btn2" onclick="appendNumber('2')">2</button>
           <button id="btn3" onclick="appendNumber('3')">3</button>
-          <button id="btnPlus">+</button>
-          <button id="btnRedo">Redo</button>
+          <button id="btnPlus" onclick="addOperation('+')">+</button>
+          <button id="btnRedo" onclick="addOperation('Redo')">Redo</button>
           <button id="btn0" onclick="appendNumber('0')">0</button>
-          <button id="btnDec">.</button>
-          <button id="btnEquals">=</button>
+          <button id="btnDec" onclick="appendDecimal()">.</button>
+          <button id="btnEquals" onclick="calculateResult()">=</button>
         </div>
     </section>
 <footer>
